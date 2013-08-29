@@ -103,6 +103,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'ZenCoding.vim'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'teramako/jscomplete-vim'
+NeoBundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on
 NeoBundleCheck
@@ -129,3 +130,18 @@ let g:neocomplcache_dictionary_filetype_lists = {
     \ 'default' : '',
     \ 'javascript' : $HOME.'/.vim/dict/javascript.dict',
     \ }
+
+
+"---------------------------------------------------
+""	vime-easymotion
+"---------------------------------------------------
+" ホームポジションに近いキーを使う
+let g:EasyMotion_keys='hjklasdfgyuiopqwertnmzxcvbHJKLASDFGYUIOPQWERTNMZXCVB'
+" 「'」 + 何かにマッピング
+let g:EasyMotion_leader_key="'"
+" 1 ストローク選択を優先する
+let g:EasyMotion_grouping=1
+" カラー設定変更
+hi EasyMotionTarget ctermbg=none ctermfg=red
+hi EasyMotionShade  ctermbg=none ctermfg=blue
+

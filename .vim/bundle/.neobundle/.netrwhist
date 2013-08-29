@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/share/houkago/scripts/service'
+let g:netrw_dirhist_2='/home/share/houkago/scripts/controller'
+let g:netrw_dirhist_3='/home/share/houkago/views/my/join'
+let g:netrw_dirhist_4='/home/share/houkago/scripts/service'
+let g:netrw_dirhist_5='/home/share/houkago/views/my/notification/top.ejs'
+let g:netrw_dirhist_6='/home/share/houkago/cert'
+let g:netrw_dirhist_7='/home/share/houkago/views/pub/thread/new'
+let g:netrw_dirhist_8='/home/share/houkago/views/pub/pochi/member'
