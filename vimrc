@@ -127,6 +127,8 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'teramako/jscomplete-vim'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'grep.vim'
 
 filetype plugin indent on
 NeoBundleCheck
@@ -168,4 +170,10 @@ let g:EasyMotion_grouping=1
 hi EasyMotionTarget ctermbg=none ctermfg=red
 hi EasyMotionShade  ctermbg=none ctermfg=blue
 
-
+"---------------------------------------------------
+""	NERDTree
+"---------------------------------------------------
+" 隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1
+" デフォルトでツリーを表示させる
+autocmd VimEnter * execute 'NERDTree'
