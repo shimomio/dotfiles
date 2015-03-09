@@ -10,6 +10,11 @@ if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
 
-if [[ -s /Users/a12213/.nvm/nvm.sh ]] ; then
-	source /Users/a12213/.nvm/nvm.sh
+if [[ -f ~/.nodebrew/nodebrew ]]; then
+	export PATH=$HOME/.nodebrew/current/bin:$PATH
+	nodebrew use v0.10.x
 fi
+
+#if [[ -s /Users/a12213/.nvm/nvm.sh ]] ; then
+#	source /Users/a12213/.nvm/nvm.sh
+#fi
