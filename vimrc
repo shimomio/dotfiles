@@ -185,3 +185,4 @@ hi EasyMotionShade  ctermbg=none ctermfg=blue
 let NERDTreeShowHidden = 1
 " デフォルトでツリーを表示させる
 autocmd VimEnter * execute 'NERDTree'
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
